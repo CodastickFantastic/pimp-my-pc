@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header #logo{
+    background: linear-gradient(160deg, rgba(118,88,73,1) 3%, rgba(29,29,29,1) 30%, rgba(29,29,29,1) 70%, rgba(118,88,73,1) 97%);
+    border-radius: 40px;
+    height: 45px;
+    width: 330px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Oi;
+    font-size: 2rem;
+    color: #dfdfc9;
+}
+
+#menu{
+    height: 60vh;
+    width: 8vh;
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    /* background: linear-gradient(200deg, rgba(255,255,207,1) 2%, rgba(211,172,95,1) 10%, rgba(211,172,95,1) 90%, rgba(255,255,207,1) 98%); */
+    background: linear-gradient(220deg, rgba(118,88,73,1) 3%, rgba(29,29,29,1) 30%, rgba(29,29,29,1) 70%, rgba(118,88,73,1) 97%);
+    border-radius: 0 20px 20px 0;
+    padding: 2vh 1vh;
+}
+
+#menu ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+}
+
+#menu img{
+    width: 100%;
+}
+
+#menu p{
+    width: 100%;
+    text-align: center;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #dfdfc9;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#workbench{
+    width: 100%;
+    height: 75vh;
+}
+
+#workbench-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    /* height: 80vh; */
+    margin: 0 auto;
+    background: linear-gradient(130deg, #765849 3%, rgba(29,29,29,1) 30%, rgba(29,29,29,1) 70%, rgba(118,88,73,1) 97%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#pc-builder{
+    height: 100%;
+    width: 60%;
+    border-right: 2px solid #765849 ;
+    padding: 10px;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+#pc-builder #pc-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#pc-builder img{
+    /* width: 100%; */
+    width: 100%;
+    height: 100%;
+}
+
+#show-pump-button, #show-mb-button, #show-gpu-button, #show-powersupply-button, #show-ssd-button{
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    left: 27%;
+    top: 20%;
+    background: transparent;
+    border: none;
+}
+
+#show-mb-button{
+    left: 25%;
+    top: 18%
+}
+
+#show-gpu-button{
+    left: 22%;
+    top: 42%;
+}
+
+#show-powersupply-button{
+    left: 21%;
+    top: 68% 
+}
+
+#show-ssd-button{
+    top: 17%;
+    left: 55%;
+}
+
+#show-pump-button{
+    top: 56%;
+    left: 54%;
+}
+
+#show-pump-button:hover, #show-mb-button:hover, #show-gpu-button:hover, #show-powersupply-button:hover, #show-ssd-button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+#pc-builder .mb-img img{
+    width: 35%;
+    height: 42%;
+    position: absolute;
+    left: 11%;
+    top: 10.5%;
+}
+
+#pc-builder .gpu-img img{
+    width: 47%;
+    height: 18%;
+    position: absolute;
+    left: 6%;
+    top: 36%;
+    z-index: 3;
+}
+
+#pc-builder .powersupply-img img{
+    width: 29%;
+    height: 25%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+#pc-builder .ssd-img img{
+    width: 12%;
+    height: 18%;
+    position: absolute;
+    left: 53.5%;
+    top: 12%;
+}
+
+#pc-builder .pump-img img{
+    width: 16%;
+    height: 33%;
+    position: absolute;
+    top: 36%;
+    left: 52%;
+    z-index: 2;
+}
+
+.pump-img img:hover, .mb-img img:hover, .gpu-img img:hover, .powersupply-img img:hover,#pc-builder .ssd-img img:hover{
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+#pc-components{
+    height: 100%;
+    width: 40%;
+    /* background-color: grey; */
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.scroll::-webkit-scrollbar{
+    background-color: #4d4d4d;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #765849;
+    border-radius: 20px;
+}
+
+#pc-components .component-frame{
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#pc-components img{
+    width: 50%;
+}
+
+#pc-components .component-frame h4{
+    margin: 10px;
+    
+}
+
+#pc-components .component-frame p{
+ margin: 10px;
+}
+
+#add{
+    height: 900px;
+    width: 100%;
+}
+
+
+
+
+/* #cost-summary{
+width: 100vw;
+height: 20vh;
+background: white;
+} */

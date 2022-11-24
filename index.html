@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PimpMyPC</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    <!-- Fonts Section -->
+</head>
+<body>
+    <header>
+        <div id="logo">Pimp My PC</div>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#"><img src="img/Icons/home.png"><p>Home</p></a></li>
+            <li><a href="#"><img src="img/Icons/pc-tower.png"><p>Creator</p></a></li>
+            <li><a href="#"><img src="img/Icons/shopping-cart.png"><p>Cart</p></a></li>
+            <li><a href="#"><img src="img/Icons/user.png"><p>Account</p></a></li>
+            <li><a href="#"><img src="img/Icons/settings.png"><p>Settings</p></a></li>
+        </ul>
+    </nav>
+
+    <section id="workbench">
+        <div id="workbench-container">
+        <section id="pc-builder">
+            <div id="pc-img">
+              <img src="img/Core P5.png" alt="Thermal Take Core P5">
+                <!-- <div id="powersupply-bracket"><img src="img/Core P5 - Bracket.png" alt="Thermal Take Core P5 Powersupply Brakcets"></div> -->
+                <button id="show-mb-button" componentType="motherboards"><img src="img/Icons/motherboard.png" alt="Show Motherboards"/></button>
+                <div id="motherboards" class="mb-img" componentType="motherboards" ></div>  
+                <button id="show-gpu-button" componentType="gpus"><img src="img/Icons/gpu.png" alt="Show GPU's"/></button>
+                <div id="gpus" class="gpu-img" componentType="gpus"></div>  
+                <button id="show-powersupply-button" componentType="powersupplys"><img src="img/Icons/power-supply.png" alt="Show Powersupply"/></button>
+                <div id="powersupplys" class="powersupply-img" componentType="powersupplys"></div>  
+                <button id="show-ssd-button" componentType="ssds"><img src="img/Icons/ssd-icon.png" alt="Show SSD"/></button>
+                <div id="ssds" class="ssd-img" componentType="ssds"></div>  
+                <button id="show-pump-button" componentType="pumps"><img src="img/Icons/Pump.png" alt="Show Pumps"/></button>
+                <div id="pumps" class="pump-img" componentType="pumps"></div>  
+            </div>
+        </section>
+        <section id="pc-components" class="scroll"></section>
+    </div>
+    </section>
+    <section id="cost-summary"></section>
+    <section id="add"></section>
+
+    <script src="app.js"></script>
+</body>
+</html>
