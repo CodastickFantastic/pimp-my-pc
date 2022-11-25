@@ -5,113 +5,108 @@ let displayComponentButton = document.querySelectorAll("button")
 const componentsList = {
     motherboards : [
         {
-            name: "MB1",
-            img: "img/PC_Components/Motherboards/MB1.png",
-            price: "1000.00 zł"
+            name: "Gigabyte<br>B450 AORUS PRO",
+            img: "img/PC_Components/Motherboards/MB-Aorus.png",
+            price: "665.00 zł"
         },
         {
-            name: "MB2",
+            name: "MSI<br>MPG Z590 GAMING PLUS",
             img: "img/PC_Components/Motherboards/MB-MSI.png",
-            price: "800.00 zł"
+            price: "769.00 zł"
         },
         {
-            name: "MB3",
-            img: "img/PC_Components/Motherboards/MB1.png",
-            price: "1200.00 zł"
+            name: "ASUS ROG<br>MAXIMUS Z690 EXTREME GLACIAL",
+            img: "img/PC_Components/Motherboards/MB-Rog.png",
+            price: "9024.31 zł"
         },
         {
-            name: "MB4",
-            img: "img/PC_Components/Motherboards/MB1.png",
-            price: "700.00 zł"
+            name: "ASRock<br>Z690 Taichi",
+            img: "img/PC_Components/Motherboards/MB-Asrock.png",
+            price: "2719.00 zł"
         }
     ],
     gpus : [
         {
-            name: "GPU1",
+            name: "Gigabyte<br>GeForce RTX 3070 Ti AORUS MASTER",
             img: "img/PC_Components/GPUs/GPU-Aorus.png",
             img2: "img/PC_Components/GPUs/GPU-Aorus-Normal.png",
-            price: "4000.00 zł"
+            price: "4349.00 zł"
         },
         {
-            name: "GPU2",
-            img: "img/PC_Components/GPUs/GPU-Aorus.png",
-            price: "5500.00 zł"
+            name: "MSI<br>GeForce RTX 3070 Ti GAMING X TRIO",
+            img: "img/PC_Components/GPUs/GPU-MSI.png",
+            img2: "img/PC_Components/GPUs/GPU-MSI-Normal.png",
+            price: "4449.00 zł"
         },
         {
-            name: "GPU3",
-            img: "img/PC_Components/GPUs/GPU-Aorus.png",
-            price: "6000.00 zł"
+            name: "ASUS<br>GeForce RTX 3070 Ti ROG STRIX",
+            img: "img/PC_Components/GPUs/GPU-Asus.png",
+            img2: "img/PC_Components/GPUs/GPU-Asus-Normal.png",
+            price: "3889.00 zł"
         },
         {
-            name: "GPU4",
+            name: "Gigabyte<br>GeForce RTX 3080 Ti AORUS MASTER",
             img: "img/PC_Components/GPUs/GPU-Aorus.png",
-            price: "1000.00 zł"
+            img2: "img/PC_Components/GPUs/GPU-Aorus-Normal.png",
+            price: "5849.00 zł"
+        },
+        {
+            name: "MSI<br>GeForce RTX 3080 Ti GAMING X TRIO",
+            img: "img/PC_Components/GPUs/GPU-MSI.png",
+            img2: "img/PC_Components/GPUs/GPU-MSI-Normal.png",
+            price: "5678.00 zł"
+        },
+        {
+            name: "ASUS<br>GeForce RTX 3080 Ti ROG STRIX",
+            img: "img/PC_Components/GPUs/GPU-Asus.png",
+            img2: "img/PC_Components/GPUs/GPU-Asus-Normal.png",
+            price: "5239.00 zł"
         }
     ],
     powersupplys: [
         {
-            name: "Powersupply 1",
+            name: "ThermalTake<br>Toughpower GF1 850W 80 Plus Gold RGB",
             img: "img/PC_Components/Powersupply/TT-Powersupply.png",
-            price: "4000.00 zł"
+            price: "950.00 zł"
         },
         {
-            name: "Powersupply 2",
-            img: "img/PC_Components/Powersupply/TT-Powersupply.png",
-            price: "5500.00 zł"
+            name: "ThermalTake</br>Toughpower Riing 1200W 80 Plus Platinum",
+            img: "img/PC_Components/Powersupply/TT2-Powersupply.png",
+            price: "1429.00 zł"
         },
         {
-            name: "Powersupply 3",
-            img: "img/PC_Components/Powersupply/TT-Powersupply.png",
-            price: "6000.00 zł"
+            name: "CoolerMaster<br>XG Plus 850W 80 Plus Platinum",
+            img: "img/PC_Components/Powersupply/CoolerMaster-Powersupply.png",
+            price: "1249.00 zł"
         },
         {
-            name: "Powersupply 4",
-            img: "img/PC_Components/Powersupply/TT-Powersupply.png",
-            price: "1000.00 zł"
+            name: "Corsair<br>RM1000e 1000W 80 Plus Gold",
+            img: "img/PC_Components/Powersupply/Corsair-Powersupply.png",
+            price: "899.00 zł"
         }
     ],
     ssds: [
         {
-            name: "SSD 1",
+            name: "Adata<br>SSD SE900G 1 TB",
             img: "img/PC_Components/SSD/SSD.png",
-            price: "4000.00 zł"
+            price: "747.00 zł"
         },
         {
-            name: "SSD 2",
-            img: "img/PC_Components/SSD/SSD.png",
-            price: "5500.00 zł"
+            name: "TEAM GROUP<br>Delta Max 1TB SSD",
+            img: "img/PC_Components/SSD/SSD2.png",
+            price: "479.00 zł"
         },
         {
-            name: "SSD 3",
-            img: "img/PC_Components/SSD/SSD.png",
-            price: "6000.00 zł"
-        },
-        {
-            name: "SSD 4",
-            img: "img/PC_Components/SSD/SSD.png",
-            price: "1000.00 zł"
+            name: "Adata<br>SSD SE770 512GB",
+            img: "img/PC_Components/SSD/SSD3.png",
+            price: "420.00 zł"
         }
     ],
     pumps: [
         {
-            name: "SSD 1",
+            name: "Corsair<br>XD5 RGB",
             img: "img/PC_Components/Pump/Pump1.png",
-            price: "4000.00 zł"
-        },
-        {
-            name: "SSD 2",
-            img: "img/PC_Components/Pump/Pump1.png",
-            price: "5500.00 zł"
-        },
-        {
-            name: "SSD 3",
-            img: "img/PC_Components/Pump/Pump1.png",
-            price: "6000.00 zł"
-        },
-        {
-            name: "SSD 4",
-            img: "img/PC_Components/Pump/Pump1.png",
-            price: "1000.00 zł"
+            price: "900.00 zł"
         }
     ]
 }
@@ -131,29 +126,40 @@ function displaySpecificComponentsList(returnFromAddComponent) {
     for(let i = 0; i < componentsList[componentType].length; i++){
         let componentFrame = document.createElement("div")
             componentFrame.setAttribute("class", "component-frame")
+
+        let componentDescription = document.createElement("div")
+            componentDescription.setAttribute("class", "component-description")    
+
         let componentName = document.createElement("h4")
             componentName.innerHTML = componentsList[componentType][i].name
+
         let componentPrice = document.createElement("p")
             componentPrice.innerHTML = componentsList[componentType][i].price    
+
         let componentImg = document.createElement("img")
             componentImg.setAttribute('src',componentsList[componentType][i].img)
         
         // Append new DIV to display all list element dynamically
+
+        componentDescription.appendChild(componentName)
+        componentDescription.appendChild(componentPrice)
         componentFrame.appendChild(componentImg)
-        componentFrame.appendChild(componentName)
-        componentFrame.appendChild(componentPrice)
+        componentFrame.appendChild(componentDescription)
         componentFrame.addEventListener('click',() => addComponent(i, componentType))
        
         displayComponents.appendChild(componentFrame)
     }
 }
 
-function addComponent(i, componentType){    
+function addComponent(i, componentType){  
     // Add specific component to PC
     let componentPicture = componentsList[componentType][i].img
     let componentImg = document.createElement("img")
     let componentDiv = document.getElementById(componentType)
     let pcWorkbench = document.getElementById("pc-img")
+
+    //Clear DIV before inserting IMG
+    componentDiv.innerHTML = ""
     
     componentImg.setAttribute("src", componentPicture)
     componentImg.addEventListener("click", () => displaySpecificComponentsList(componentType))
@@ -168,17 +174,18 @@ function addComponent(i, componentType){
         rotateButtonDescription.innerHTML = "Change GPU Position"
         
         
-        if( checkButtonExistance == undefined){ 
-            console.log("nie widać ") 
-            rotateButton.setAttribute("id", "rotate-gpu")
-            rotateButton.addEventListener("click", () => rotateGPU(i, componentType))
-
-            rotatePicture.setAttribute("src", "img/Icons/rotate.png" )
-            
-            rotateButton.append(rotatePicture)
-            rotateButton.append(rotateButtonDescription)
-            pcWorkbench.append(rotateButton)
+        if( checkButtonExistance){ 
+            checkButtonExistance.remove()
         }
+        rotateButton.setAttribute("id", "rotate-gpu")
+        rotateButton.addEventListener("click", () => rotateGPU(i, componentType))
+
+        rotatePicture.setAttribute("src", "img/Icons/rotate.png" )
+            
+        rotateButton.append(rotatePicture)
+        rotateButton.append(rotateButtonDescription)
+        pcWorkbench.append(rotateButton)
+
     }
     componentDiv.append(componentImg)
 }
