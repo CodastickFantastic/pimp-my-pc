@@ -96,7 +96,7 @@ header #logo{
     height: 100%;
 }
 
-#show-pump-button, #show-mb-button, #show-gpu-button, #show-powersupply-button, #show-ssd-button{
+#rotate-gpu, #show-pump-button, #show-mb-button, #show-gpu-button, #show-powersupply-button, #show-ssd-button{
     position: absolute;
     width: 9%;
     height: 9%;
@@ -116,6 +116,12 @@ header #logo{
     top: 42%;
 }
 
+#rotate-gpu{
+    left: -12%;
+    top: 42%;
+    color: white;
+}
+
 #show-powersupply-button{
     left: 21%;
     top: 68% 
@@ -131,7 +137,7 @@ header #logo{
     left: 54%;
 }
 
-#show-pump-button:hover, #show-mb-button:hover, #show-gpu-button:hover, #show-powersupply-button:hover, #show-ssd-button:hover{
+#rotate-gpu:hover, #show-pump-button:hover, #show-mb-button:hover, #show-gpu-button:hover, #show-powersupply-button:hover, #show-ssd-button:hover{
     transform: scale(1.2);
     cursor: pointer;
     filter: drop-shadow(0px 0px 5px white);
@@ -152,6 +158,15 @@ header #logo{
     left: 6%;
     top: 36%;
     z-index: 3;
+}
+
+#pc-builder #normal-gpu-standing img{
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    top: 42%;
+    left: 3%;
+
 }
 
 #pc-builder .powersupply-img img{
@@ -179,7 +194,7 @@ header #logo{
     z-index: 2;
 }
 
-.pump-img img:hover, .mb-img img:hover, .gpu-img img:hover, .powersupply-img img:hover,#pc-builder .ssd-img img:hover{
+#normal-gpu-standing img:hover, .pump-img img:hover, .mb-img img:hover, .gpu-img img:hover, .powersupply-img img:hover,#pc-builder .ssd-img img:hover{
     filter: drop-shadow(0px 0px 10px white);
 }
 
