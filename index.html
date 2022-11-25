@@ -28,28 +28,59 @@
 
     <section id="workbench">
         <div id="workbench-container">
-        <section id="pc-builder">
-            <div id="pc-img">
-              <img src="img/Core P5.png" alt="Thermal Take Core P5">
-                <!-- <div id="powersupply-bracket"><img src="img/Core P5 - Bracket.png" alt="Thermal Take Core P5 Powersupply Brakcets"></div> -->
-                <button id="show-mb-button" componentType="motherboards"><img src="img/Icons/motherboard.png" alt="Show Motherboards"/></button>
-                <div id="motherboards" class="mb-img" componentType="motherboards" ></div>  
-                <button id="show-gpu-button" componentType="gpus"><img src="img/Icons/gpu.png" alt="Show GPU's"/></button>
-                <div id="gpus" class="gpu-img" componentType="gpus"></div> 
-                <div id="normal-gpu-standing"></div> 
-                <button id="show-powersupply-button" componentType="powersupplys"><img src="img/Icons/power-supply.png" alt="Show Powersupply"/></button>
-                <div id="powersupplys" class="powersupply-img" componentType="powersupplys"></div>  
-                <button id="show-ssd-button" componentType="ssds"><img src="img/Icons/ssd-icon.png" alt="Show SSD"/></button>
-                <div id="ssds" class="ssd-img" componentType="ssds"></div>  
-                <button id="show-pump-button" componentType="pumps"><img src="img/Icons/Pump.png" alt="Show Pumps"/></button>
-                <div id="pumps" class="pump-img" componentType="pumps"></div>  
-            </div>
-        </section>
-        <section id="pc-components" class="scroll"></section>
-    </div>
+            <section id="pc-builder">
+                <div id="pc-img">
+                <img src="img/Core P5.png" alt="Thermal Take Core P5">
+                    <!-- <div id="powersupply-bracket"><img src="img/Core P5 - Bracket.png" alt="Thermal Take Core P5 Powersupply Brakcets"></div> -->
+                    <button id="show-mb-button" componentType="motherboards"><img src="img/Icons/motherboard.png" alt="Show Motherboards"/></button>
+                    <div id="motherboards" class="mb-img" componentType="motherboards" ></div>  
+                    <button id="show-gpu-button" componentType="gpus"><img src="img/Icons/gpu.png" alt="Show GPU's"/></button>
+                    <div id="gpus" class="gpu-img" componentType="gpus"></div> 
+                    <div id="normal-gpu-standing"></div> 
+                    <button id="show-powersupply-button" componentType="powersupplys"><img src="img/Icons/power-supply.png" alt="Show Powersupply"/></button>
+                    <div id="powersupplys" class="powersupply-img" componentType="powersupplys"></div>  
+                    <button id="show-ssd-button" componentType="ssds"><img src="img/Icons/ssd-icon.png" alt="Show SSD"/></button>
+                    <div id="ssds" class="ssd-img" componentType="ssds"></div>  
+                    <button id="show-pump-button" componentType="pumps"><img src="img/Icons/Pump.png" alt="Show Pumps"/></button>
+                    <div id="pumps" class="pump-img" componentType="pumps"></div>  
+                </div>
+            </section>
+            <section id="pc-components" class="scroll">
+                <p id="text">Pick an element to show possible options</p>
+            </section>
+        </div>
     </section>
-    <section id="cost-summary"></section>
-    <section id="add"></section>
+    <section id="cost-summary">
+        <h2>Cost Summary</h2>
+        <div id="costSummary-container">
+            <div id="component-cost">
+                <div class="single-component-cost">
+                    <h3>Motherboard</h3>
+                    <p><span id="motherboard-price" class="finalPriceHandler">Item not selected</span></p>
+                </div>
+                <div class="single-component-cost">
+                    <h3>Graphick Card</h3>
+                    <p><span id="gpu-price" class="finalPriceHandler">Item not selected</span></p>
+                </div>
+                <div class="single-component-cost">
+                    <h3>Power Supply</h3>
+                    <p><span id="powerSupply-price" class="finalPriceHandler">Item not selected</span></p>
+                </div>
+                <div class="single-component-cost">
+                    <h3>SSD</h3>
+                    <p><span id="ssd-price" class="finalPriceHandler">Item not selected</span></p>
+                </div>
+                <div class="single-component-cost">
+                    <h3>Water Pump</h3>
+                    <p><span id="pump-price" class="finalPriceHandler">Item not selected</span></p>
+                </div>
+            </div>
+            <div id="cart-summary">
+                <p>Total Brutto: <span id="total-brutto-cost"></span></p>
+                <p>Total Netto: <span id="total-netto-cost">0 zł</span></p>
+            </div>
+        </div>
+    </section>
 
     <script src="app.js"></script>
 </body>
