@@ -1,9 +1,6 @@
 let isVertical = true //Used by rotateGpu() function
-let bruttoPrice = 0
 let displayComponents = document.getElementById("pc-components")
 let displayComponentButton = document.querySelectorAll("button")
-
-
 
 const componentsList = {
     motherboards : [
@@ -114,9 +111,14 @@ const componentsList = {
     ]
 }
 
-let myBuild = [
-    {myMotherBoard:""},
-]
+//Main Function
+displayComponentButton.forEach(button => {
+    button.addEventListener('click',displaySpecificComponentsList)
+})
+
+//Cart Price Update
+setInterval(cartPrice, 100)
+
 
 function displaySpecificComponentsList(returnFromAddComponent) {
     // Get component name to display from HTML sheet
@@ -192,7 +194,6 @@ function addComponent(i, componentType){
     }
     componentDiv.append(componentImg)
     addPriceToCart(i, componentType)
-    cartPrice()
 }
 
 function addPriceToCart(i, componentType){
@@ -230,18 +231,22 @@ function addPriceToCart(i, componentType){
 function cartPrice(){
     let prices = Array.from(document.getElementsByClassName("finalPriceHandler"))
     let bruttoSpan = document.getElementById("total-brutto-cost")
+    let nettoSpan = document.getElementById("total-netto-cost")
+    let bruttoPrice = 0
+    let nettoPrice
     
 
     prices.forEach(price =>{
-        if(price.textContent === "Item not selected" ){
-            console.log("String Value")
-        } else {
+        if(price.textContent !== "Item not selected" ){
             bruttoPrice += parseInt(price.textContent)
         }
     })
 
     bruttoSpan.innerHTML = ""
     bruttoSpan.innerHTML = bruttoPrice + " zł"
+    nettoPrice = (bruttoPrice/1.23).toFixed(2)
+    nettoSpan.innerHTML = ""
+    nettoSpan.innerHTML = nettoPrice + " zł"
 }
 
 function rotateGPU(i, componentType){
@@ -261,8 +266,3 @@ function rotateGPU(i, componentType){
         isVertical = true
     }
 }
-
-
-displayComponentButton.forEach(button => {
-    button.addEventListener('click',displaySpecificComponentsList)
-})
