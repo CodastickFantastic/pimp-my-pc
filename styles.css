@@ -237,7 +237,7 @@ header #logo{
     border-radius: 20px;
     padding: 10px;
     width: 80%;
-    height: 12vh;
+    height: auto;
     text-align: center;
     color: #dfdfc9;
 }
